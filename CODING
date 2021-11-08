@@ -1,3 +1,5 @@
+CODING 1A
+
 package assignment;
 
 import java.util.Scanner;
@@ -26,6 +28,73 @@ class Num1A {
 		
 		System.out.println("\nThe monthly payment is :"+ mon_pay);
 		System.out.println("The total payment is :"+ total_pay);
+	}
+
+}
+
+
+
+CODING 1B
+
+package assignment;
+
+//Aim of program is to calculate the total price that needs to be paid by a customer in C_MARTS shopping complex
+//calculate the discount obtained by the customer based on the total price
+
+import java.util.Scanner;
+
+class Num1B {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int no_item;
+		double price, quantity, to_price, dis1, dis2, real_pay, discount, sum1, sum2, sum3;
+		
+		System.out.print("Enter the number of item :");
+		no_item = sc.nextInt(); 
+		
+		
+		System.out.print("Enter price of the first item :");
+		price = sc.nextInt();
+		
+		System.out.print("Enter the quantity of the item:");
+		quantity = sc.nextInt();
+		
+		sum1=price*quantity;
+		
+		System.out.print("\nEnter price of second the item :");
+		price = sc.nextInt();
+		
+		System.out.print("Enter the quantity of the item:");
+		quantity = sc.nextInt();
+		
+		sum2=price*quantity;
+		
+		System.out.print("\nEnter price of the third item :");
+		price = sc.nextInt();
+		
+		System.out.print("Enter the quantity of the item:");
+		quantity = sc.nextInt();
+		
+		sum3=price*quantity;
+		
+		to_price = (sum1+sum2+sum3);
+		
+			if(to_price>99) {
+				dis1 = (20/100) * to_price;
+				System.out.println("The discount received is :"+ dis1);
+				System.out.println("\nThe total price is :"+ (to_price - dis1));	
+			}else {
+				dis2 = (10/100) * to_price;
+			System.out.println("The discount received is :"+ dis2);
+			System.out.println("\nThe total price is :"+ (to_price - dis2));
+			}
+			
+
+		
 	}
 
 }
