@@ -1,0 +1,31 @@
+package assignment;
+
+import java.util.Scanner;
+
+class Num1A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		
+		int year=0;
+		double interest, mon_pay, total_pay, amount, year_interest;
+		
+		System.out.print("Enter the yearly interest rate, for example, 0.5 :");
+		interest = sc.nextDouble(); 
+		
+		System.out.print("Enter the number of years as an integer, for example, 2 :");
+		year = sc.nextInt();
+		
+		System.out.print("Enter the loan amount, for example, 1500.00 :");
+		amount = sc.nextDouble();
+		
+		year_interest= (3.5/100)*3000;
+		mon_pay = (year_interest/12) + (3000/60);
+		total_pay = 3000 + year_interest*5;
+		
+		System.out.println("\nThe monthly payment is :"+ mon_pay);
+		System.out.println("The total payment is :"+ total_pay);
+	}
+
+}
