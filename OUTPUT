@@ -6,3 +6,18 @@ Enter the loan amount, for example, 1500.00 :3000
 
 The monthly payment is :58.75
 The total payment is :3525.0
+
+OUTPUT 1B
+
+Enter the number of item :3
+Enter price of the first item :150
+Enter the quantity of the item:2
+
+Enter price of second the item :50
+Enter the quantity of the item:3
+
+Enter price of the third item :30
+Enter the quantity of the item:1
+The discount received is :0.0
+
+The total price is :480.0
